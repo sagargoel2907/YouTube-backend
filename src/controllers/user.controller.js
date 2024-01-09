@@ -39,10 +39,10 @@ export const registerUser = asyncHandler(async (req, res) => {
   if (!avatarLocalPath) {
     throw new ApiError(400, "Avatar is mandatory for registration");
   }
-  console.log(avatarLocalPath, coverImageLocalPath);
+  // console.log(avatarLocalPath, coverImageLocalPath);
   const avatar = await uploadOnCloudinary(avatarLocalPath);
   const coverImage = await uploadOnCloudinary(coverImageLocalPath);
-  console.log(avatar, coverImage);
+  // console.log(avatar, coverImage);
   if (!avatar) {
     throw new ApiError(400, "Avatar is mandatory for registration");
   }
