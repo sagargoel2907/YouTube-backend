@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import fs from "fs";
 import path from "path";
 import { ApiError } from "./utils/ApiError.js";
-import asyncHandler from "./utils/asyncHandler.js";
+import {asyncHandler} from "./utils/asyncHandler.js";
 
 const app = express();
 
